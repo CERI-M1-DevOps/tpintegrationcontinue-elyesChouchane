@@ -1,5 +1,7 @@
 name: Java CI with Maven - Test and package
 on:
+  push:
+    branches: "dev"
   pull_request:
     branches: [ main ]
     types: [ opened, synchronize, reopened ]
