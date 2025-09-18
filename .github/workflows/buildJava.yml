@@ -2,7 +2,8 @@ name: Java CI with Maven - Test and package
 on:
   pull_request:
     branches: [ main ]
-
+    types: [ opened, synchronize, reopened ]
+  
 jobs:
   build:
     runs-on: ubuntu-latest
