@@ -44,13 +44,13 @@ class ListeSimpleTest {
     }
 
     @Test
-     void toStringDonneTousLesNoeuds() {
-        System.out.println(listeATester);
-        listeATester.ajout(1);
-        listeATester.ajout(2);
-        listeATester.ajout(3);
-        System.out.println(listeATester);
-    }
+void toStringDonneTousLesNoeuds() {
+    assertEquals("ListeSimple()", listeATester.toString());
+    listeATester.ajout(1);
+    listeATester.ajout(2);
+    listeATester.ajout(3);
+    assertEquals("ListeSimple(Noeud(3), Noeud(2), Noeud(1))", listeATester.toString());
+}
 
     @Test
      void modifiePremier() {
