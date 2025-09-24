@@ -30,7 +30,8 @@ class ListeSimple {
         }
     }
 
-    String toString() {
+    @Override
+    public String toString() {
         StringBuilder sb = new StringBuilder("ListeSimple(");
         Noeud n = tete;
         while (n != null) {
